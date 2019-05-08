@@ -1,0 +1,25 @@
+@mixin flex ($align, $justify) {
+    display: flex;
+    align-items: $align;
+    justify-content: $justify;
+}
+
+@mixin button($pd-y, $pd-x, $bg) {
+    padding: $pd-y $pd-x;
+    background: $bg;
+    text-transform: none;
+    color: gray;
+    font-size: 18px;
+}
+
+@mixin text () {
+    font-size: $font-size-text;
+    text-decoration: none;
+    color: $color-gray;  
+}
+
+@mixin title ($transform, $color) {
+    font-size: $font-size-title;
+    text-transform: $transform;
+    color: $color
+}

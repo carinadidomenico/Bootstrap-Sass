@@ -1,0 +1,33 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+.logo {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 30px;
+}
+
+.bg {
+    background-image: url(../assets/header-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.texto-header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20vh;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.img-card {
+    width: 80px;
+}

@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+}
+
+nav.navbar {
+    width: 100vw;
+    .navbar-header {
+        background-color: $color-black;
+        padding: $padding;
+        width: 100%;
+        @include flex (center, 'space-between');
+    }
+    a{
+        @include text();
+    }
+    h1 {
+        @include title (uppercase, $color-white);
+    }
+    .container, ul {
+        @include flex (center, 'space-around');
+    }
+    ul {
+        padding: $padding;
+    }
+}
+
+
+.btn1 {
+    @include button(10px, 20px, $color-white);
+}
+
+.btn2 {
+    @include button (5px, 5px, transparent);
+    border: none;
+}
