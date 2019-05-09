@@ -1,0 +1,16 @@
+.apresentacao{
+    overflow: hidden;
+}
+
+.apresentacao-img {
+    width: 65vw;
+    margin-right: -34vw;
+}
+
+.apresentacao-content {
+    width: 35vw;
+}
+
+.colunas {
+    @include flex (center, space-between);
+}

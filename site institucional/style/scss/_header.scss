@@ -1,35 +1,32 @@
-body {
-    margin: 0;
-}
+.header {
+    position: absolute;
+    padding: 20px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    .container {
+        @include flex (center, space-between);
+    }
+    .navbar-right {
+        @include flex (center, center);
+        li+li {
+            margin-left: 30px;
+        }
+    }
+    li a {
+        color: $color-secundary;
+    }
+    .logo-container {
+        @include flex (center, center);
+        img {
+            border-radius: 50%;
+            border: 1px solid $color-black;
+            margin-right: 10px;
+        }
+        h1 {
+            margin: 0;
+            width: 87px;
+        }
+    }
 
-nav.navbar {
-    width: 100vw;
-    .navbar-header {
-        background-color: $color-black;
-        padding: $padding;
-        width: 100%;
-        @include flex (center, 'space-between');
-    }
-    a{
-        @include text();
-    }
-    h1 {
-        @include title (uppercase, $color-white);
-    }
-    .container, ul {
-        @include flex (center, 'space-around');
-    }
-    ul {
-        padding: $padding;
-    }
-}
-
-
-.btn1 {
-    @include button(10px, 20px, $color-white);
-}
-
-.btn2 {
-    @include button (5px, 5px, transparent);
-    border: none;
 }

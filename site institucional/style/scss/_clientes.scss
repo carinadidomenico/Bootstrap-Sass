@@ -1,0 +1,21 @@
+.clientes {
+    background-color: $color-bg;
+    .clientes-texto {
+        @include flex (center, center);
+        flex-direction: column;
+        text-align: center;
+        width: 60vw;
+        margin: 0 auto;
+    }
+    .clientes-titulo {
+        @include title (uppercase, gray);
+    }
+    .clientes-paragrafo {
+        @include text(gray);
+    }
+}
+
+.lista-logo {
+    @include flex (center, space-between);
+    padding-bottom: $padding;
+}

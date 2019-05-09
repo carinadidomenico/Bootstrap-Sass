@@ -1,0 +1,41 @@
+.banner {
+    background: linear-gradient(rgba(75, 58, 58, 0.425), rgba(12, 12, 12, 0.562)), url(../images/bg3.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+.banner-content {
+    height: 85vh;
+    width: 57vw;
+    margin: 0 auto;
+    @include flex (flex-end, space-between);
+    .phone {
+        margin-bottom: -23vh;
+        height: 87vh;
+    }
+    .banner-text {
+        width: 30vw;
+        h2 {
+            @include title(unset, $color-secundary);            
+        }
+        h5 {
+            @include text ($color-secundary);
+        }
+    }
+    .content {
+        @include flex (center, space-between);
+        width: 57vw;
+    }
+}
+
+.btn-fill {
+    @include button(10px, 20px, $color-icon, $color-bg);
+    font-size: 25px;
+    border-radius: 5px;
+}
+
+.btn-simple {
+    @include button(10px, 20px, transparent, $color-secundary);
+    font-size: 20px;
+}

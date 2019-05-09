@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+ul {
+    padding: 0; 
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    @include text($color-secundary);
+}
+
+button {
+    border: none;
+}
+
+.container {
+    width: 75%;
+    margin: 0 auto;
+
+    @media screen and (max-width: 420px) {
+        width: 90%;
+    }
+}
+
+
+

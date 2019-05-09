@@ -4,22 +4,24 @@
     justify-content: $justify;
 }
 
-@mixin button($pd-y, $pd-x, $bg) {
+@mixin button($pd-y, $pd-x,$bg, $text) {
     padding: $pd-y $pd-x;
     background: $bg;
     text-transform: none;
-    color: gray;
+    color: $text;
     font-size: 18px;
 }
 
-@mixin text () {
+@mixin text ($color) {
     font-size: $font-size-text;
     text-decoration: none;
-    color: $color-gray;  
+    color: $color;
+    font-family: 'Montserrat', sans-serif; 
 }
 
 @mixin title ($transform, $color) {
     font-size: $font-size-title;
     text-transform: $transform;
-    color: $color
+    color: $color;
+    font-family: 'Montserrat', sans-serif;
 }
